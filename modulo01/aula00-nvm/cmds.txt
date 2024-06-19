@@ -1,0 +1,32 @@
+# Comandos do NVM
+
+- Instalando uma nova versão
+> nvm install 20
+
+- Instalando a versão LTS
+> nvm install --lts
+
+- Lista as versões disponíveis
+> nvm list
+
+- Usando versão especifica do node (já instalada na minha máquina)
+> nvm use 18
+
+- Utilizando a versão default
+> nvm alias default 18
+
+- Arquivo .nvmrc com a versão desejada.
+> podemos colocar dentro do projeto, um arquivo .nvmrc, na qual
+> estamos contando para o projeto a versão do node que vamos utilizar.
+> logo, ao entrar dentro do projeto, vamos apenas rodar um 'nvm use'
+> para utilizar a versão do node suportada pelo projeto.
+
+- boas praticas de projeto:
+> Definir a versão do node que vamos utilizar no projeto, dentro do
+> package.json: com essa versão, a gente diz para o instalador de pacotes
+> a versão que vamos utilizar, além de dizer a versão para o nvm.
+>
+>  "engines": {
+>    "node": "18"
+>  }
+>
