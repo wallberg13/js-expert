@@ -1,0 +1,9 @@
+Stubs servem para substituir comportamento de funções que possuem
+dependencia externa a aplicação.
+
+-- 
+https://swapi.dev
+
+-- 
+https://sinonjs.org/
+sinonjs.org => biblioteca para testes unitários.
