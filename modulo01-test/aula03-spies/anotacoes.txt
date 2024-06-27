@@ -1,0 +1,4 @@
+spies -> eles observam uma função, observando
+a quantidade de vezes que a mesma foi chamada.
+Util para códigos complexos com muitas chamadas
+recursivas.
