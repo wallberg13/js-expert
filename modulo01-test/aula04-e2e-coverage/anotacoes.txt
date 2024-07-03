@@ -1,0 +1,16 @@
+e2e -> teste end-to-end
+mocha => package motor de teste para e2e
+Istanbul (nyc)  => Pacote para realizar code coverage
+
+O mocha fornece uma suite de testes (bem parecido com o jest), que pode fazer
+testes já gerando estatisticas com ele. Segundo o Erick Wendel, é uma lib leve
+e de fácil uso (assim como todas as suites de testes.).
+
+-> describe  => descrever uma parte de uma suite de teste.
+-> it        => inicio / frase de um teste. Precisa de um callback para fazer
+                o teste rodar todo.
+-> assert    => retorna erro caso uma condição não tenha sido atendida.
+-> supertest => faz chamada http dentro do proprio teste.
+
+=> Para testes e2e, é essencial que estejamos invocando nosso proprio servidor 
+   http.
