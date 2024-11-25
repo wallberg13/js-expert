@@ -1,0 +1,3 @@
+// node-draftlog  > Impressão via terminal
+// chalk          > Imprime bonitinho
+// chalk-table    > Imprimir uma tabela no terminal
