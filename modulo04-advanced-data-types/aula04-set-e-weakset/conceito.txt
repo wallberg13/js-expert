@@ -1,0 +1,4 @@
+// Set serve para não repetir valores.
+
+// O set resolve para não precisar fazer mapping and reduce
+// para pegar elementos unicos de uma lista.
