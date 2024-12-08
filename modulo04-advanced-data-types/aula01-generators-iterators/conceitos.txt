@@ -1,0 +1,4 @@
+Generators:
+
+A função do Generators é fazer com que as funções virem listas e que entreguem
+os dados sob demanda.

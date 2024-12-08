@@ -1,0 +1,6 @@
+O tipo Symbol
+
+Symbol.toPrimitive > Interceptar a conversão do objeto.
+
+Função privadas em classes.
+Symbol para interseptar o comportamento de uma função.
