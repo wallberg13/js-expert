@@ -1,0 +1,10 @@
+// Maps poder utilizar objetos como chave de referencia, object só trabalha
+// com strings e symbols
+
+// Maps é mais indicado quando preciso sair adicionando e removendo
+// chaves dinamicamente.
+
+// Trás uma semantica melhor, remove item sem
+
+// for of no object para saber minha chaves.
+
