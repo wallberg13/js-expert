@@ -1,0 +1,1 @@
+ A estrutura Proxy do Javascript nos permite fazer exatamente o mesmo.  E o melhor cenário são os Sockets HTTP, se um usuário novo se conecta, toda a rede precisa saber que tem mais clientes para receber mensagens, enviar mensagens e assim por diante. 
