@@ -1,0 +1,63 @@
+Referencia: https://regex101.com/
+
+# Regex 01: Pegando o padrão do CPF
+^\d{3}.\d{3}.\d{3}-\d{2}$
+
+123.123.123-13
+123.123.123-20
+222.222.123-13
+
+\d  => São digitos de 0 => 9
+^   => Inicio de cada linha
+$   => A expressão terminal na linha
+[]  => Colchetes é utilizado como "ou", então
+      tudo que fica dentro de colchetes, é utilizado com "ou".
+\w+ => Pega toda a palavra (o +, na real, pega tudo o que estiver definido na 
+       ocorrencia que defini anteriormente).
+\s  => Espaço
+()  => Grupos, cada grupo é enumerado, onde o $0 é o proprio match, e com a
+       sequencia dos parenteses, vamos tendo os matches.
+\[  => Pesquisa literal (inicia com a "barra invertida")
+?   => Not greedy (não guloso). Paro a expressão na primeira ocorrencia.
+
+# Regex 02: Removendo Caracteres "especiais"
+replace [.-] - vazio
+
+=> Pegando todos os caracteres especiais dentro dessa cadeia de caracteres 
+(padrão do CPF).
+
+# Regex 03: Transformando um padrão em JSON
+
+Berg, Morais
+Teco, Taca
+Caralho, Buceta
+
+Regex   => ^(\w+),\s(\w+)$
+Replace => {firstName: "$2", lastName: "$1"}
+
+# Regex 04: Transformando MarkDown para HTML
+
+"
+O [Wall Berg](https://wallberg.com) faz palestras e você deveria segui-lo lá no [Cacete](http://xxxx.com.com/asdasdas_) ou até no [TecoTeco](https://tecoteco.com)
+
+Ah e pode pesquisar no [YouTubiu](https://tubiu.com) ou no [XX](https://xx.com)
+
+Vamo que vamo!!
+"
+
+Regex   => \[(.*?)\]\(([http|https].*?)\)
+Replace => <a href="$2">$1</a>
+
+# Regex 05: Terminal Linux
+
+- Comando Find
+
+find . -name *.test.js # O name é uma expressão regular..
+find . -name *.test.js -not -path '*node_modules**' # A node modules está fora do nosso controle, então ignoramos ele.
+find . -name *.js -not -path '*node_modules**' # A node modules está fora do nosso controle, então ignoramos ele.
+
+npm i -g ipt # IPT > painel iterativo, com seleção do que queremos
+
+# O Pipe > a medida que os dados estão chegando, envia para o ipt.
+find . -name *.js -not -path '*node_modules**' | ipt
+
