@@ -19,6 +19,8 @@ $   => A expressão terminal na linha
        sequencia dos parenteses, vamos tendo os matches.
 \[  => Pesquisa literal (inicia com a "barra invertida")
 ?   => Not greedy (não guloso). Paro a expressão na primeira ocorrencia.
+<=  => Positive Lookbehind => Pega todo mundo que estiver na frente dessa expressão.
+(?!\s) => O !, ignora quem tiver com esse matching na frente (o \s).
 
 # Regex 02: Removendo Caracteres "especiais"
 replace [.-] - vazio
