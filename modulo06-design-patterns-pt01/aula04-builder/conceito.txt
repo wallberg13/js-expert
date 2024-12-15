@@ -1,0 +1,8 @@
+// Builder
+
+// FluentAPI => MethodChain
+
+// Builder   => criação de objetos complexos sob demanda
+// FluentAPI => Pipelines
+
+// Facade Pattern (Faxada) => Abstrai toda complexidade da FluentApi
