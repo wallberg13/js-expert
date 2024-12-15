@@ -1,0 +1,54 @@
+Diferença de Patterns e AntiPattern
+
+-- Over Engineering > ninguém quer mexer, pq ninguém sabe o que acontece nele.
+-- Big ball of mud
+
+DRY
+> Don't Repeat Yourself
+> Não repita código. Se é a mesma base de código, cria uma função que faça aquilo
+
+KISS
+> Keep It Simple Stupid
+> Mantenha o mais simples possível, para manter o código simples, funcional e manutenível.
+
+YAGNI
+> You aren't gonna need it
+> Você não vai precisar disso agora. Não adianta sair desenvolvendo 
+> tudo que você não vai precisar agora.
+
+Clean Code
+> Código limpo.
+> Especificar convenção entre programadores.
+
+Não precisamos ler todo o livro para fazer algo sobre Clean Code.
+=> https://github.com/ryanmcdermott/clean-code-javascript
+
+S.O.L.I.D (Uncle Bob and Michel Feathers)
+
+S>ingle Responsibility
+O>pen Closed
+L>iskov Substitution
+I>nterface Segregation
+D>ependency Inversion
+
+Single Responsibility
+=> Principio da responsabilidade unica. Um modulo deve ter uma, e apenas uma
+   razao para existir.
+
+Open Closed
+=> Aberto para extensão, e fechado para modificação.
+=> Nunca altere o que já funciona.
+
+Liskov Substitution Principle
+=> Criação de classes bases.
+=> As classes filhas podem herdar os métodos da classe pai, e alterar seu
+=> comportamentos.
+
+Interface Segregation
+=> Classes são contratos que dizem o que uma classe deve ter.
+
+Posso ter uma CRUD com parte de escrita e outra parte de leitura, e manter tudo
+deparado.
+
+Dependency Inversion Principle
+> Devemos depender de abstrações, e não de implementações.

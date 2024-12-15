@@ -1,0 +1,22 @@
+Padrão Factory:
+-> Se encaixa para Classes e Funcional.
+-> Abstrai a complexidade de criação de um objeto.
+
+-> Connection Factories
+
+=> No padrão Factory, é ruim de testar, mas tem solução.
+
+N-Camadas
+N-Tier
+N-Layer
+==> Acesso a dados
+==> Regras de Negocio
+==> Services
+
+- Repository: padrão de acesso a dados deve ser feito por uma classe especifico.
+- Não adicionamos regra de negocios no repository.
+
+- Services: colocamos as regras de negocios.
+
+- Dependency Injection
+=> Service > Repository > Driver do Banco
