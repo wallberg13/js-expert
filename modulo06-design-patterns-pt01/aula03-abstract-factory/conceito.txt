@@ -1,0 +1,4 @@
+Familias de Objetos
+
+// Object Factory > Ele diz o que precisa ter em cada lugar.
+// O OLTZ faz isso!! :-)
