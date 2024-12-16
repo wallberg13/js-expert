@@ -1,0 +1,4 @@
+Padrão Observer: "Você não me chama, eu chamo você".
+
+== 
+npx jest --init
