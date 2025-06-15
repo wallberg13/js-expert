@@ -1,0 +1,37 @@
+## Aula sobre Primeiro Pacote
+npm ci => instalo as depedencias do projeto da mesma forma que
+       => foi instalado em sua forma original (ou seja, pega o package-lock.json como
+       => referencia);
+
+# Primeiro > Preciso criar uma conta no npm
+# No nome do pacote, sempre colocar um escopo, tipo: @wallberg/xxx
+# Fazer login no npm: npm login
+
+# Para publicar              > npm publish --access=public
+# Para criar um patch        > npm version patch => muda o patch
+# Para criar uma nova feat   > npm version minor
+# Para criar breaking change > npm version major
+
+# Verificar os pacotes que estão desatualizados do projeto
+# > npm outdated
+
+# Atualiza todos os pacotes
+# > npm update
+
+## OBS: Major Version
+# O simbolo em ^, na frente da versão, significa que ele não
+# irá atualizar a versão major do pacote, visto que provavelmente o mesmo
+# possui breaking changes.
+"dependencies": {
+    "@wallberg/fluentsql": "^2.0.0"
+  }
+
+> npm i @wallberg/fluentsql@1.x
+## 1.x => Significa que estou pegando a versão mais recente da major 1.0
+
+# Controle de Versão (major.minor.patch)
+1.2.3
+1. => Versões com breaking changes.
+2. => Versões com features novas.
+3. => Versões com patches de correção.
+
