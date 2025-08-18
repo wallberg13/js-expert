@@ -1,0 +1,17 @@
+## Aula 02 - NPM Pacotes de Versão
+
+> CLI para recuperar os pacotes do package json.
+> npm ci --silent
+
+https://semver.npmjs.com/
+
+### 
+>2.0.0 => Versão maior
+:2.0.0 => Versão que eu quero.
+^2.0.0 => Pega a maior versão que não seja o 0.
+~2.0.0 => Pega dentro de um mesmo minor.
+
+# range
+>1.0.0 < 2.0.1 => Pega um range de versões.
+
+npm rm <nome pacote>

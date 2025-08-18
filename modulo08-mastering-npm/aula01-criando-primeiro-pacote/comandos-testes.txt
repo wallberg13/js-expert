@@ -27,7 +27,7 @@ npm ci => instalo as depedencias do projeto da mesma forma que
   }
 
 > npm i @wallberg/fluentsql@1.x
-## 1.x => Significa que estou pegando a versão mais recente da major 1.0
+## ^1.x => Significa que estou pegando a versão mais recente da major 1.0
 
 # Controle de Versão (major.minor.patch)
 1.2.3
