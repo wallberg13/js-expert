@@ -1,0 +1,118 @@
+Objetivos:
+- Trabalhar com pacotes privados e publicos.
+- Configuração para diferentes ambientes
+
+### URLs de Registry
+NPM > https://registry.npmjs.org
+Git > https://npm.pkg.github.com
+
+## CLIs
+==> npm ci --silent => restaura os pacotes
+
+# Login no NPM
+npm login
+
+# Criar patch publicar
+npm version patch
+npm publish
+
+==> OBS: não existe mais a packages.
+https://github.com/features/actions
+
+=> Foi tudo virado em actions.
+https://docs.github.com/pt/packages/quickstart
+
+=== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+=== > Como fazer no Git.
+=== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1º => Criar a chave de deploy
+Settings > Developer Settings > Personal Access Token > Classic
+write:packages
+delete:packages
+
+2º => Criar o repositório onde vai ficar o projeto (de forma privada)
+
+3º => Ir na opção de criar pacote (parou no minuto 7:15)
+Packages
+No packages published
+Publish your first package
+
+4º => Colocar as configs de repositório no package.json
+
+"repository": {
+  "type": "git",
+  "url": "https://github.com/wallberg13/fluentsql-v2"
+}
+
+"name": "@wallberg13/fluentsql", => O name precisa ser exatamente o escopo do usuário
+
+5º => Fazer login no registry do Git
+
+# npm login --registry "<url>"
+# npm login --registry "https://npm.pkg.github.com"
+
+6º => Publicando o pacote
+
+# npm login --auth-type=legacy --registry=https://npm.pkg.github.com
+# npm publish --auth-type=legacy --registry=https://npm.pkg.github.com
+
+7º => Para não precisar toda vez, colocar o registry do pacote no cmd,
+   => add a config no package.json
+
+"publishConfig": {
+  "registry": "https://npm.pkg.github.com"
+}
+
+=== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+=== > NPM RC
+=== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1º => Instalo o Pacote
+# npm i npmrc -g
+
+2º => Para utilizar um perfil
+# npmrc <profile_name>
+
+3º => Listar os workspaces
+# npmrc
+
+4º => Para criar um perfil
+# npmrc -c <novo_perfil>
+
+5º => Configurando um registry dentro de um perfil
+# npm config set registry <url_registry>
+
+=== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+=== > OBS
+=== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Instalação de pacotes
+=> Como o NPMRC sempre olha para um repositório, precisamos
+   ter ciencia que caso o pacote que estamos querendo instalar
+   não exista, ele não vai ser instalado devido o mesmo não
+   existir no registry que estamos trabalhando. Provavelmente
+   vamos ter listas de preferencias de instalação.
+
+=> Vamos fazer associação de usuário
+
+Com isso, vamos fazer com scopo de usuário
+# npm login --scope=@<scopo de usuário> --registry=<url_do_registry>
+
+Assim, mesmo que o registry padrão esteja no npm, ao realizar um publish naquele
+escopo, ele vai pegar o usuário que eu solicitei
+
+=== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+=== > Verdaccio
+=== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Instalando:
+npm i -g verdaccio
+
+Para por pra rodar, basta fazer: verdaccio
+Se cria um perfil do npm, para o ambiente de publicações locais.
+
+Para criar um novo usuário no verdaccio: npm adduser --registry http://localhost:4873/
+
+Configuração: npm config set registry=http://localhost:4873/
+
+E só publicar apenas nesse pacote, fazer o de => para
