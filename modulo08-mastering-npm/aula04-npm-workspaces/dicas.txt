@@ -1,0 +1,26 @@
+Criando mais de um pacote no mesmo repositório, como npm workspaces.
+
+Iniciando um novo workspace.
+# npm init -w <nome_workspace> -y --scope <escopo do projeto>
+
+Instalando um pacote dentro do Workspace especifico.
+# npm i -D nodemon -w string-util
+
+Instalando pacote em todos os workspaces.
+## npm i -D c8 --workspaces
+
+Executando script no Workspace especifico
+# npm test -w string-util
+
+É possível passar um pacote para ser dependencia de outro pacote, com o 
+mesmo estando no mesmo repositório, sem precisar está no registry.
+# npm i @wallberg13/string-util -w @wallberg13/date-util
+
+Set o npm config set to verdaccio
+# npm config set registry=http://localhost:4873/
+
+Publicando os Workspaces
+# npm publish --workspaces
+
+Tirando os pacotes do ar
+# npm unpublish -f --workspaces
