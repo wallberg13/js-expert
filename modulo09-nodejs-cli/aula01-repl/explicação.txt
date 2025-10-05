@@ -1,0 +1,37 @@
+REPL => Read-Eval-Print-Loop (Ler, Executar, Printar e Loop)
+
+=> Colocando como .mjs, não precisamos de package json.
+
+Para executar o Debug no NodeJS.
+=> # node inspect --experimental-repl-await <arquivo.js>
+
+Comandos no Debug:
+# list(100)                            > Listando 100 linhas.
+# setBreakpoint(<n_linha>) / sb(<line>)> Setando um breakpoint
+# cont / c                             > para continuar a execução
+# exec <variável>                      > mostra o conteudo de uma variável
+# exec {novas coisas}                  > executa o que escrevi baseado na
+                                       > variável que estou acessando.
+                                       > Ex: exec new URLSearchParams(req.url) => Em tempo
+                                         de execução.
+# .save <nome do arquivo>              > Salvando tudo o que foi feito no modo debug.
+# r                                    > Restartando o modo debuguer (ele continua com os breakpoint    
+                                         points ativos);
+# clearBreakpoint('<file>', <line>)    > Limpa um breakPoint em um arquivo e linha
+                                         especifico.
+# breakpoints                          > Lista todos os breakpoints.
+# repl                                 > Entra no modo de leitura / modo terminal interativo. Faz o mesmo que o exec <eval>, mas ele entra em um modo.
+# --experimental-repl-await            > flag para esperar promises dentro do repl.
+# --inspect <index>                    > exporta um websocket para ser utilizado em outro lugar (no DevTools do Chrome, por exemplo)
+
+# Tem como subir um depurador dentro do próprio código, e abrir um websocket para saber o que está acontecendo com o
+# código, o problema é fazer isso onde temos uma aplicação com .exe.
+
+https://blog.cleancoder.com/uncle-bob/2020/05/27/ReplDrivenDesign.html
+
+https://nodejs.org/api/repl.html#repl_repl
+
+--------------------------------------------------------------------------------
+Observações:
+- O debug só pega quem está no contexto da execução do processo.
+- 
