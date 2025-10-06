@@ -1,0 +1,17 @@
+# Series de Programas para CLI
+# Mad Science
+
+# Ferramentas Feitas em JS que pode facilitar no dia a dia.
+
+fkill   => Utilizado para Matar Processos
+npkill  => Encontrar pastas pesadas da node_modules dentro de minha máquina
+
+awasome-nodejs => https://github.com/sindresorhus/awesome-nodejs
+               => Ferramentas nativas de JS.
+
+Terminal Kit => Carrega Imagem no Terminal / Terminais
+Blessed      => Formulários via terminal, com botões e capturas do mouse. Pintar o mouse.
+             => https://github.com/chjj/blessed
+blessed-contrib => http://npmjs.com/package/blessed-contrib
+
+=> Componentes para Terminais
