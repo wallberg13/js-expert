@@ -1,0 +1,13 @@
+{
+  "name": "@wallberg13/aula01-read-write-duplex-transform",
+  "version": "1.0.0",
+  "description": "NodeJS Stream - Ajuda processar arquivos pesados e processar tudo sob demanda.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
