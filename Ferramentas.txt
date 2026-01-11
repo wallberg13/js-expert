@@ -1,1 +1,2 @@
 jq => Transforma saídas do terminal para um arquivo json.
+ntl => ajuda na hora de selecionar scripts que serão executados em um contexto

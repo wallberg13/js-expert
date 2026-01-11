@@ -21,6 +21,7 @@ $   => A expressão terminal na linha
 ?   => Not greedy (não guloso). Paro a expressão na primeira ocorrencia.
 <=  => Positive Lookbehind => Pega todo mundo que estiver na frente dessa expressão.
 (?!\s) => O !, ignora quem tiver com esse matching na frente (o \s).
+(?=-) => Positive Lookahead => É um "stop" de regex
 
 # Regex 02: Removendo Caracteres "especiais"
 replace [.-] - vazio
@@ -63,3 +64,4 @@ npm i -g ipt # IPT > painel iterativo, com seleção do que queremos
 # O Pipe > a medida que os dados estão chegando, envia para o ipt.
 find . -name *.js -not -path '*node_modules**' | ipt
 
+ 
