@@ -1,0 +1,19 @@
+{
+  "name": "aula02-consumindo-apis",
+  "version": "1.0.0",
+  "description": "> PassThrough - Criado com o objetivo para ser uma função para monitorar o que está acontecendo entre > dois passos de um stream. > > Significado: Passar direto. > > Concatena vários fluxos (streams) em um só.",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "mkdir -p logs && node webapi.js",
+    "api1": "curl http://localhost:3000/api1 | tee logs/api1.log",
+    "api2": "curl http://localhost:4000/api2 | tee logs/api2.log",
+    "example01": "node examples/1.concat-streams.async-interators.js | tee logs/1.concat-streams.async-interators.log"
+  },
+  "keywords": [],
+  "author": "@wallberg13",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.13.2"
+  }
+}
