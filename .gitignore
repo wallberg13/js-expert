@@ -4,3 +4,4 @@ coverage
 .reify-cache
 *.log
 data/
+log.txt
