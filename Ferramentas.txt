@@ -1,2 +1,6 @@
 jq => Transforma saídas do terminal para um arquivo json.
 ntl => ajuda na hora de selecionar scripts que serão executados em um contexto
+climem => Ferramenta de CLI para monitorar memoria.
+autocannon => Teste de carga
+0x => Consegue analisar o código em tempo de execução e mostra a linha do código que está cagado.
+clinic => outra ferramenta para analise de código
